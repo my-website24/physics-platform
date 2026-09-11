@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>منصة الموسوعة للفيزياء</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+
+    background:
+    radial-gradient(circle at top right, #E8F0EB 0%, transparent 35%),
+    linear-gradient(135deg,#F7F3E8,#FFFFFF);
+}
+
+
+/* Main Card */
+
+.card{
+    width:450px;
+    max-width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    border:2px solid #D5B45A;
+
+    border-radius:32px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 50px rgba(11,73,56,.15),
+    0 5px 15px rgba(201,160,68,.12);
+}
+
+
+/* Logo */
+
+.logo{
+    width:170px;
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 10px 30px rgba(11,73,56,.20);
+
+    border:3px solid #D5B45A;
+}
+
+
+/* Title */
+
+h1{
+    color:#0B4938;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#C9A044;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+
+/* Description */
+
+p{
+    color:#5F665F;
+
+    line-height:2;
+
+    font-size:17px;
+
+    margin-bottom:25px;
+}
+
+
+/* Features */
+
+.features{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+    margin-bottom:28px;
+}
+
+.item{
+    background:#E8F0EB;
+
+    border:1px solid #D5E2DA;
+
+    padding:15px 8px;
+
+    border-radius:18px;
+
+    font-size:15px;
+
+    color:#0B4938;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-4px);
+
+    background:#DCE9E1;
+
+    box-shadow:0 8px 18px rgba(11,73,56,.12);
+}
+
+
+/* Download Button */
+
+.download{
+    display:block;
+
+    width:100%;
+
+    padding:17px;
+
+    background:
+    linear-gradient(135deg,#0B4938,#17664F);
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:21px;
+
+    font-weight:800;
+
+    border-radius:50px;
+
+    border:2px solid #C9A044;
+
+    transition:.3s;
+
+    box-shadow:
+    0 8px 20px rgba(11,73,56,.20);
+}
+
+.download:hover{
+    transform:translateY(-3px) scale(1.02);
+
+    background:
+    linear-gradient(135deg,#17664F,#0B4938);
+
+    box-shadow:
+    0 12px 28px rgba(11,73,56,.30);
+}
+
+
+/* Footer */
+
+.footer{
+    margin-top:22px;
+
+    font-size:14px;
+
+    color:#8A8F89;
+}
+
+
+/* Gold line */
+
+.gold-line{
+    width:90px;
+
+    height:4px;
+
+    background:#C9A044;
+
+    border-radius:10px;
+
+    margin:12px auto 18px;
+}
+
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .card{
+        padding:25px 20px;
+    }
+
+    .logo{
+        width:145px;
+        height:145px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    .subtitle{
+        font-size:18px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+    <!-- Logo -->
+    <img src="logo.png" class="logo" alt="شعار الموسوعي">
+
+
+    <!-- Title -->
+    <h1>الموسوعة</h1>
+
+    <div class="gold-line"></div>
+
+    <div class="subtitle">
+        منصة الموسوعة للفيزياء
+    </div>
+
+
+    <!-- Description -->
+    <p>
+        منصة تعليمية متخصصة في مادة الفيزياء،
+        تساعدك على فهم القوانين والمفاهيم بطريقة
+        سهلة ومنظمة، مع الدروس والاختبارات والمراجعات.
+    </p>
+
+
+    <!-- Features -->
+    <div class="features">
+
+        <div class="item">
+            📚 دروس الفيزياء
+        </div>
+
+        <div class="item">
+            🎥 شرح مبسط
+        </div>
+
+        <div class="item">
+            📝 اختبارات إلكترونية
+        </div>
+
+        <div class="item">
+            ⚡ مراجعات ونهائيات
+        </div>
+
+    </div>
+
+
+    <!-- Download -->
+    <a class="download"
+       href="c:\Users\ElRaed\OneDrive\Desktop\الموسوعه.apk">
+
+        📥تحميل تطبيق الموسوعة
+
+    </a>
+
+
+    <div class="footer">
+        ✦ بوابتك لفهم الفيزياء ✦
+    </div>
+
+</div>
+
+
+</body>
+</html>
